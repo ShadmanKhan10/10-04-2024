@@ -28,10 +28,13 @@ function App() {
         <input
           type="text"
           placeholder="settodo"
+          className="input-box"
           value={todo}
           onChange={handleTodoChange}
         />
-        <button onClick={setTask}>SetTodo</button>
+        <button className="sbt-btn" onClick={setTask}>
+          SetTodo
+        </button>
       </div>
       {todos.map((to, index) => (
         <div key={index}>
@@ -45,6 +48,14 @@ function App() {
           </button>
         </div>
       ))}
+      <div className="image-container">
+        <img
+          src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg"
+          alt="testimg"
+          className="image-test"
+        />
+      </div>
+      <div className="line-input"></div>
     </>
   );
 }
